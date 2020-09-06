@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/homeFragment"
+            android:title="หน้าหลัก" />
+        <item
+            android:id="@+id/postFragment"
+            android:title="โพสต์" />
+
+    </group>
+
+    <item android:title="สมาชิกผู้ใช้งาน">
+        <menu>
+            <item
+                android:id="@+id/memberNSRFragment"
+                android:title="พี่เลี้ยงเด็ก" />
+            <item
+                android:id="@+id/memberPRFragment"
+                android:title="ผู้ปกครอง" />
+        </menu>
+    </item>
+
+    <item android:title="Account Setting">
+        <menu>
+            <item
+                android:id="@+id/repoet"
+                android:title="Repoet" />
+            <item
+                android:id="@+id/logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+</menu>

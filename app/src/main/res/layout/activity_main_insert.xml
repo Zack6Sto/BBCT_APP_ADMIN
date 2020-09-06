@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.main.MainEditActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:context=".view.forgot.ForgotPassword">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="เพิ่มสมาชิก"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/eti_code"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="รหัสประชาชน">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/eti_username"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="username">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/eti_password"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="password">
+
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/eti_fname"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="ชื่อ นามสกุล">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/eti_lname"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="ชื่อ นามสกุล">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/eti_sex"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="เพศ">
+
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/eti_age"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="อายุ">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/eti_phon"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="เบอร์โทรศัพท์">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/eti_address"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="ที่อยู๋">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/eti_email"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="email">
+
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/eti_file"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="ไฟล์">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/eti_status"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="สถานะ">
+
+            </EditText>
+
+            <Button
+                android:id="@+id/btn_Insert"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="เพิ่มข้อมูล">
+
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

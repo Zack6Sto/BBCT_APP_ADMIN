@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.bbct_app_admin.ui.home.HomeFragment"
+        android:label="หน้าหลัก"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_memberFragment"
+            app:destination="@id/memberNSRFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/memberNSRFragment"
+        android:name="com.example.bbct_app_admin.ui.member_nsr.MemberNsrFragment"
+        android:label="พี่เลี้ยงเด็ก"
+        tools:layout="@layout/fragment_member_nsr" >
+        <argument
+            android:name="number"
+            app:argType="integer"
+            android:defaultValue="2" />
+        <action
+            android:id="@+id/action_memberNSRFragment_to_memberPRFragment"
+            app:destination="@id/memberPRFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/memberPRFragment"
+        android:name="com.example.bbct_app_admin.ui.member_pr.MemberPrFragment"
+        android:label="ผู้ปกครอง"
+        tools:layout="@layout/fragment_member_nsr" >
+        <action
+            android:id="@+id/action_memberPRFragment_to_postFragment"
+            app:destination="@id/postFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/postFragment"
+        android:name="com.example.bbct_app_admin.ui.post.PostFragment"
+        android:label="โพสต์"
+        tools:layout="@layout/fragment_post" >
+        <action
+            android:id="@+id/action_postFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+</navigation>
